@@ -1,4 +1,10 @@
-#Mushroom Mania
+# Mushroom Mania
+
++ npm install in lib folder
++ run grunt on lib folder
++ plug in your database api info in app/values/FBCreds.js
+
+## Instructions
 
 Setup
 
