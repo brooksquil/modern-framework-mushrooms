@@ -1,0 +1,12 @@
+<article class="mushroom-list">
+    <header>
+        <h1>Mushrooms</h1>
+    </header>
+    <section>
+        <div ng-repeat="item in mushrooms">
+            <!-- #- means change view/do not refresh on link click -->
+            <h4>{{item.name}}</h4>
+            <p>{{item.description}}</p>
+        </div>
+    </section>
+</article>
