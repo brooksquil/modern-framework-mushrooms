@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-    <title>Mushrooms | Will It Kill You?!</title>
+    <title>Mushrooms | Which ones are safe?</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <!-- <link href="css/main.css" rel="stylesheet"> -->
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
     <div ng-app="mushrooms">
         <!-- Load navbar partial: -->
-        <div ng-include="'partials/navbar.html'"></div>
+
         <div>
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1 main-container">
@@ -28,10 +28,8 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <div class="copyright">
-                        © 2017, Brooke Wittenberg, All rights reserved
-                    </div>
+                <div class="copyright">
+                    © 2017, Brooke Wittenberg, All rights reserved
                 </div>
             </div>
         </div>
@@ -49,7 +47,6 @@
 
     <!-- controller scripts -->
     <script src="./app/controllers/ctrl-mushroom.js"></script>
-    <script src="./app/controllers/ctrl-navbar.js"></script>
 
     <!-- factory script -->
     <script src="./app/factories/factory-mushroom.js"></script>

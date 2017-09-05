@@ -1,11 +1,17 @@
+<nav class="navbar navbar-inverse bg-inverse">
+    <h2 class="navbar">MycoMindr</h2>
+    <form class="form-inline" class="input-group">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" ng-model="searchText">
+        <input type="radio" ng-model="edible" value="true"> Non-poisonous
+        <input type="radio" ng-model="edible" value="false"> Poisonous
+    </form>
+</nav>
+
+
 <article class="mushroom-list">
-    <header>
-        <h1>Mushrooms</h1>
-    </header>
     <section>
-        <div ng-repeat="item in mushrooms">
-            <!-- #- means change view/do not refresh on link click -->
-            <h4>{{item.name}}</h4>
+        <div ng-repeat="item in shrooms | filter:searchText | filter:edible">
+            <h3>{{item.name}}</h3>
             <p>{{item.description}}</p>
         </div>
     </section>

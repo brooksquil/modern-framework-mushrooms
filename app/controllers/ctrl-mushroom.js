@@ -5,8 +5,13 @@ app.controller("shroomCtrl", function($scope, shroomFactory) {
 
     shroomFactory.getShrooms()
         .then(function(itemCollection) {
-            $scope.mushrooms = itemCollection;
-            // console.log($scope);
+            //push items to array for search funtionality
+            let shroomArray = [];
+            let shrooms = Object.keys(itemCollection);
+            shrooms.forEach((item) => {
+                shroomArray.push(itemCollection[item]);
+            });
+            console.log("Shrooms", itemCollection);
+            $scope.shrooms = shroomArray;
         });
-
 });

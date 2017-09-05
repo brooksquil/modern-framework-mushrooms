@@ -5,10 +5,6 @@ var app = angular.module("mushrooms", ['ngRoute']);
 //$routeprovider- determines URL route
 app.config(function($routeProvider) {
     $routeProvider.
-        // when('/', {
-        //     templateUrl: 'partials/navbar.html',
-        //     controller: "navCtrl"
-        // }).
     when('/', {
         //templateUrl- what template to use:
         templateUrl: 'partials/mushroom.html',
